@@ -84,7 +84,7 @@ function App() {
       
       
      try {
-       const response = await fetch("http://localhost:3000/analyze",{
+       const response = await fetch("https://resultextractor-gvbyamg4cch3a0f0.centralindia-01.azurewebsites.net/analyze",{
          method: "POST",
          headers: { "Content-Type": "application/json" },
          body: JSON.stringify({ data:csvData, prompt }),
