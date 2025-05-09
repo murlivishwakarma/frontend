@@ -1,0 +1,204 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  
+  margin: 0;
+  padding: 0;
+  background-color:white;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+  text-align: center;
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color:black;
+}
+
+input, select, button {
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 4px;
+  font-size: 16px;
+  color:black;
+  background-color: white;
+  
+}
+
+button {
+  background-color: #007BFF;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#progress {
+  margin-top: 20px;
+}
+
+#statusMessage {
+  font-weight: bold;
+  color:black;
+}
+
+#resultList {
+  list-style: none;
+  padding: 0;
+}
+.loading-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  margin-top: 20px;
+}
+
+/* Spinner animation */
+.spinner {
+  border: 8px solid #f3f3f3; /* Light grey border */
+  border-top: 8px solid #3498db; /* Blue border */
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+}
+
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  color: black;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+
+.bg-blue-100,
+.bg-blue-200,
+.bg-blue-50,
+.bg-white {
+  background-color: white !important;
+}
+
+.text-black {
+  color: black !important;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  width: 100%;
+}
+
+.table-wrapper table {
+  min-width: 100%;
+  border-collapse: collapse;
+}
+
+.table-wrapper th,
+.table-wrapper td {
+  padding: 12px;
+  border: 1px solid #ccc;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.table-wrapper thead {
+  background-color: #dbeafe; /* light blue */
+}
+
+.table-wrapper tbody tr:hover {
+  background-color: #f9fafb; /* light gray on hover */
+}
+.csv-analysis-section {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+.csv-analysis-section h2 {
+  text-align: center;
+  color: #1f2937; /* slate-800 */
+  margin-bottom: 16px;
+}
+
+.csv-analysis-section input[type="file"] {
+  display: block;
+  margin: 10px auto;
+  padding: 8px;
+  font-size: 16px;
+}
+
+.csv-analysis-section textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #d7d6dd; /* gray-300 */
+  border-radius: 6px;
+  font-size: 16px;
+  resize: vertical;
+  box-shadow: inset 0 1px 3px rgba(213, 211, 211, 0.05);
+}
+
+.csv-analysis-section button {
+  margin-top: 12px;
+  padding: 10px 16px;
+  background-color: #3b82f6; /* blue-500 */
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.2s ease;
+}
+
+.csv-analysis-section button:disabled {
+  background-color: #9ca3af; /* gray-400 */
+  cursor: not-allowed;
+}
+
+.csv-analysis-section button:hover:not(:disabled) {
+  background-color: #2563eb; /* blue-600 */
+}
+
+
+@keyframes spin {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
